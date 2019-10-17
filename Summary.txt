@@ -1,0 +1,96 @@
+https://cs.indiana.edu/~dgerman/ibm-q/moran/9781789136432-MASTERING_QUANTUM_COMPUTING_WITH_IBM_QX.pdf
+
+https://cs.indiana.edu/~dgerman/ibm-q/week04/manning01.pdf
+
+https://cs.indiana.edu/~dgerman/ibm-q/week04/manning02.pdf
+
+This project is going to explore the applications of quantum computing using Python
+and Q#. Although we won't be using a quantum computer, Q# and several existing Python
+packages will allow us to take advantage of multiple aspects of quantum computing.
+Starting with implementing Morgana's game and utilizing Q#, we will try to predict the
+outcome of randomly generating qubits.
+
+2019-9-15 16:34:01 bmcshane submitted.
+
+2019-9-16 12:13:58 dgerman Indeed the initial exploration starts from https://cs.indiana.edu/~dgerman/ibm-q/week04/manning01.pdf
+
+2019-9-16 12:15:32 dgerman However our main goal is to completely check and understand the following: https://arxiv.org/abs/1903.04359
+
+2019-9-16 12:23:06 dgerman Here's the actual textbook we need to absorb and rewrite for our purposes: https://arxiv.org/pdf/1903.04359.pdf
+
+2019-9-16 12:23:47 dgerman Our work then starts from this: https://www.cs.indiana.edu/~dgerman/ibm-q/moran/6w2.pdf
+
+2019-9-16 12:29:28 dgerman But first install Jupyter locally like so: https://cs.indiana.edu/~dgerman/ibm-q/moran/week05.pdf
+
+2019-9-16 12:30:16 bmcshane updated project summary.
+
+2019-9-16 12:33:09 dgerman Basic Plan for the class(es) offered last summer that we would like to connect with. The idea being that going
+through Koch et al.'s materials we could better support what we already did last summer. Summary for 6W2 2019 follows: There are two parts
+to this course. The second part is the important part, the first part is there so we don't ignore it completely. Part 1. Introduction to
+Classical Computation. Here we will examine very briefly the Turing machine, the circuit model of computation, classes of computational
+complexity, computing dynamical systems (that is: deterministic chaos and algorithmic complexity), energy and information (Maxwell's demon,
+Landauer's principle) and reversible computation (Toffoli and Fredkin gates and the Billiard Ball computer). No more than giving the
+definitions and stating the results. Part 2. ?Quantum Computation with IBM QX. IBM Research has made quantum computing available to the
+public for the first time, providing cloud access to IBM QX from any desktop or mobile device. We will explore the IBM Ecosystem, which
+enables quantum development with Quantum Composer and the Qiskit. As we progress through the course and the lab manual we will implement
+algorithms on the quantum processor and learn how quantum computations are actually performed. Learning outcomes for the course: understand
+the relationship between quantum computation and classical computation. Understand the qubit and how it can be measured. Understand
+entanglement and its relationship with quantum cryptography. Build a basic understanding of the currently existing quantum hardware
+(e.g., trapped ion, CQED, cQED etc.) At the end of the course students should be able to "parse" known quantum algorithms: Shor,
+Grover, Deutsch-Josza etc. Basic plan for this second part: quantum computers exploit the properties of quantum physics, superposition
+and entanglement, to perform some computations much more efficiently than on a classical computer. Theoretically quantum computers should
+offer significant speedup over their classical counterparts however at this time they are under development and are not robust enough to
+exihibit that speedup. A qubit is a quantum piece of information. Manipulating qubits of information is what powers many modern quantum
+computers including IBM QX. We start by simulating single qubits with Python. Any qubit is a vector radius in the Bloch sphere. In a
+single quantum state qubits are entangled. Coherence is a property of waves. Qubits interact with their environment and thus lose coherence.
+We calculate how long a quantum computer can maintain coherence. We then learn about the quantum equivalents of classic gates. Quantum gates
+operate on a quantum register to change its state. Quantum gates can operate on one, two, or more qubit states. The gates I, X, Y,
+Z, H, S, S+, T, T+ and CNOT form a universal gate set that can be combined to perform any quantum computation. (S+ and T+ are called dagger
+gates.) A quantum circuit is merely a sequence of quantum gates. A quantum circuit diagram is a method to visualize quantum circuits.
+Qiskit is the Quantum Information Science Kit. It is an SDK for working with the IBM QX quantum processors. At this stage we learn how
+to use Qiskit to write Python code to represent a variety of quantum circuits. Quantum computing is reversible. Next we move on to programming
+directly for the IBM QX. The Quantum Composer is an interactve interface in IBM QX. From here we move to working with the Open Quantum
+Assembly Language, a custom programming language designed specifically to minimally describe quantum circuits. Open QASM can be used to
+write a quantum program, and then execute it on IBM QX. Next we introduce Qiskit, focusing on how it can be used to run programs in IBM
+QX as well as its capabilities for quantum simulation. There are two main code repositories in Qiskit: Qiskit Terra (low level quantum
+programming via directly manipulating qubits and quantum and classic registers) and Qiskit Aqua (contains a library of higher level quantum
+and classic algorithms useful in building larger quantum programs within the framework). Qiskit Aqua is likely the way we'll program quantum
+computers in the future. Next we move on to common quantum algorithms that can form subroutines of larger programs. To this end we first
+explore some quantum equivalents of classical Boolean gates, quantum AND (Toffoli) and quantum OR, with the aim of being able to specify
+logic problems to be solved by a quantum computer for use with Grover's algorithm. We define 3SAT and we use Grover's algorithm to solve
+an instance of 3SAT. We describe Grover's algorithm (implemented by creating a superposition over all possible inputs and then iterating a
+checker step, which tags the unique input that satisfies the function, with a mover step that changes the probabilities of observing each
+input to increase the chance of seeing the correct input and decrease the chance of seeing the other inputs. The checker step is called an
+oracle step and the mover step is called a diffusion step in most of the quantum computing literature.) Next we move to learning about Shor's
+algorithm. We first define the Quantum Fourier Transform(QFT) which is a sub-routine in many important quantum algorithms, including Shor's.
+We compare with the classical algorithm for the Discrete Fourier Transform. QFT is not typically used on its own, as already mentioned,
+but we can see it in action as part of Shor's algorithm. Shor's algorithm has a large classical component, with just one portion, a period
+finding subroutine that can be run on a quantum computer. We first show an implementation on a classical computer. Then we trace it to see how
+it works. Finally we provide an implementation of Shor's in Qiskit. We end by describing ways in which we can avoid errors in our quantum
+algorithms via quantum error correction algorithms. Note: the plan above is just a sketch and thus subject to change.
+
+2019-9-16 12:34:32 dgerman This is the text of one of the 6W2 2019 textbook(s),
+the main textbook: https://cs.indiana.edu/~dgerman/ibm-q/moran/9781789136432-MASTERING_QUANTUM_COMPUTING_WITH_IBM_QX.pdf
+
+2019-9-16 12:37:47 dgerman Instructor Approved
+
+2019-9-16 12:41:50 dgerman This is to prove that we're in touch with the authors and we are in advanced stages to read and understand their
+material (out of which we want our lab manual to emerge) RE: code files for your qiskit tutorial KOCH, DANIEL S CTR USAF AFMC AFRL/RITA German,
+Dan-Adrian; Hey Adrian, Thank you for your patience. Everything is all set, and I am e-mailing you the Qiskit Tutorial Files. Some of these
+files may still contain typos/content that didn’t make it into the final draft of the ArXiV version, but I hope they are still helpful! In
+order to run the .ipynb files correctly, please make the following changes: 1) Place all of the images into a folder (that you must create)
+named “QA_Images”. This folder must be in the same working directory as the ipynb files 2) The python file “Our_Qiskit_Functions.py” has
+been changed to “Our_Qiskit_Functions.txt” in order to be sent through email. Be sure to change it back to a .py and place it into the same
+working directory as the .ipynb files Cheers, Dan -- https://twitter.com/qiskit/status/1172948182378188800​
+
+
+
+
+
+
+
+
+Translation
+lab manual: https://www.cs.indiana.edu/~dgermaxon/ibm-q/moran/6w2.pdf
+install jupyter locally: https://cs.indiana.edu/~dgerman/ibm-q/moran/week05.pdf
+IBM QX textbook: https://cs.indiana.edu/~dgerman/ibm-q/moran/9781789136432-MASTERING_QUANTUM_COMPUTING_WITH_IBM_QX.pdf
