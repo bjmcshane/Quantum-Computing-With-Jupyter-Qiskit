@@ -85,12 +85,18 @@ working directory as the .ipynb files Cheers, Dan -- https://twitter.com/qiskit/
 
 
 
+TERMINAL COMMANDS
+source ~/MoranQC/bin/activate
+pip install ipykernel
+ipython kernel install --user --name=goombah
+jupyter notebook --port=27182 --ip=silo.soic.indiana.edu --no-browser
+// dont really need anything past the port argument, i use 27181
 
 
 
 
 
 Translation
-lab manual: https://www.cs.indiana.edu/~dgermaxon/ibm-q/moran/6w2.pdf
+lab manual: https://www.cs.indiana.edu/~dgerman/ibm-q/moran/6w2.pdf
 install jupyter locally: https://cs.indiana.edu/~dgerman/ibm-q/moran/week05.pdf
 IBM QX textbook: https://cs.indiana.edu/~dgerman/ibm-q/moran/9781789136432-MASTERING_QUANTUM_COMPUTING_WITH_IBM_QX.pdf
