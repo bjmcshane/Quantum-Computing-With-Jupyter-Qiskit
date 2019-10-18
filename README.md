@@ -1,2 +1,2 @@
 # Quantum-Computing-With-Jupyter-Qiskit
-Any Qiskit work I do with Professor Dan-Adrian German(dgerman@soic.indiana.edu) in our Undergraduate Independent Study course during the Fall 2019 semester.
+Any Qiskit work I do with Professor Dan-Adrian German(dgerman@soic.indiana.edu) in our Undergraduate Independent Study course during the Fall 2019 semester. Note that this is largely me running code from "Mastering Quantum Computing With IBM QX"  (https://cs.indiana.edu/~dgerman/ibm-q/moran/9781789136432-MASTERING_QUANTUM_COMPUTING_WITH_IBM_QX.pdf) as I make my way through the textbook, and I do not claim any code as my own unless explicitly stated.
